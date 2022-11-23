@@ -5,6 +5,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,8 +17,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@/utils/*": ["./src/utils/*"],
+      "@/server/*": ["./src/server/*"],
       "@/*": ["./*"]
     }
+
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
