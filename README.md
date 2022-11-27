@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stack used
+
+<img style="margin-right: 20px" src="https://cdn.worldvectorlogo.com/logos/docker.svg" width="48" height="48" alt="docker" />
+<img style="margin-right: 20px" src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" width="48" height="48" alt="Postgres" />
+<img style="margin-right: 20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" width="48" height="48" alt="TypeScript"/>
+<img style="margin-right: 20px" src="https://raw.githubusercontent.com/samfromaway/samfromaway/master/.github/images/nextjs.png" width="48" height="48" alt="Next JS" />
+
+<br>
+<img  style="margin-right: 20px" src="https://brandeps.com/icon-download/P/Prisma-icon-vector-01.svg" width="48" height="48" alt="Prisma"/>
+<img  style="margin-right: 20px" src="https://trpc.io/img/logo.svg" width="48" height="48" alt="tRPC"/>
+<img style="margin-right: 20px" src="https://raw.githubusercontent.com/colinhacks/zod/6ce18f3de2ce29c3c3eb35ac08983d181311b40e/logo.svg" width="48" height="48" alt="Zod" />
+<img  style="margin-right: 20px" src="https://pbs.twimg.com/profile_images/1384763585742704642/TJa1rkqk_400x400.jpg" width="48" height="48" alt="Mantine"/>
 
 ## Getting Started
 
-First, run the development server:
+First, run the Prisma:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npx prisma init
+npx prisma migrate dev --name init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Second, run the Developent server
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+yarn dev
+```

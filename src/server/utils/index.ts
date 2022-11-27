@@ -1,1 +1,1 @@
-export * from './wrapSuccess'
+export  * from './prisma.db'

@@ -3,12 +3,18 @@ import Head from "next/head";
 import {MantineProvider} from "@mantine/core";
 import {trpc} from "@/utils/trpc";
 
+
+
+
+
+
 const MyApp: AppType = ({Component, pageProps}) => {
   return (
       <>
         <Head>
-          <title>Page title</title>
+          <title>Pokemon: Pass/Smash</title>
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+          <meta name="description" content="A simple pass or smash game but pokemon"/>
         </Head>
 
         <MantineProvider
