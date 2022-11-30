@@ -1,1 +1,1 @@
-export const MAX_POKEMONS = 1154;
+export const MAX_POKEMONS = 905;

@@ -17,9 +17,12 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@/components/utils/*": ["./src/components/utils/*"],
+      "@/components/*" :  ["./src/components/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/server/*": ["./src/server/*"],
-      "@/*": ["./*"]
+      "@/styles/*" :  ["./src/components/styles/*"],
+      "@/*": ["./*"],
     }
 
   },

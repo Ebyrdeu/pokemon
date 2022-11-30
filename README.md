@@ -13,15 +13,33 @@
 
 ## Getting Started
 
-First, run the Prisma:
+#### 1. Run  the docker: 
+
+```bash
+docker pull postgres
+```
+
+#### 2. Run the Prisma:
 
 ```bash
 npx prisma init
 npx prisma migrate dev --name init
+npx prisma studio
 ```
 
-Second, run the Developent server
+#### 3. use 'fillDatabase.ts' in pokemon.ts
+```ts
+export const pokemonsRouter = router({
+	pokemons: procedure.query(async ({ input }) => {
+		fillDatabase()
+		return await prisma.pokemons.findMany()
+	})
+});
+```
+
+#### 4. Run the Developent server
 
 ```bash
 yarn dev
 ```
+
